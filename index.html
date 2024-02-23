@@ -6,33 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Houda</title>
     <link href="/assets/styles/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/styles/index.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/32fe4a8f5c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 </head>
-<body>
-    <header>
-        <nav class="bg-light">
-            <div class="container">
-                <div class="bg-dark bg-gradient p-4 w-100">
-
+<body id="page-top">
+    <header class="container mb-5 bg-dark bg-gradient navbar-toggler fixed-top ">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand text-uppercase fw-bold" href="/index.html">
+                    <img src="./assets/images/houda.png" class="rounded-circle">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link text-white" href="#home">Accueil</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link text-white" href="#propos">À propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#skill">Compétences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    
                 </div>
             </div>
-
         </nav>
+        
     </header>
     <main>
         <!--========= section dev =========-->
-        <section id="home" class="py-5" >
+        <section id="home" class="my-5" >
             <div class="container ">
-                <div class="row ">
-                    <div class="col-8 ">
-                        <h1>Bienvenue sur mon portfolio </h1>
-                        <h2>Je suis Houda, développeuse full-stack junior</h2>
-                        <button>Télécharger mon CV</button>
+                <div class="row gy-4 align-items-center ">
+                    <div class="col-12 col-md-8 ">
+                        <h1 class="fw-bold ">Bienvenue sur mon portfolio </h1>
+                        <h2 class="fw-light">Je suis Houda, développeuse full-stack</h2>
+                        <a href="/assets/cv.pdf" class="btn btn-primary mt-5" role="button" download>Télécharger mon CV</a>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-md-4">
                         <img src="./assets/images/index.jpg" alt="image-index" width="100%" >
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--========= section propos =========-->
+        <section id="propos">
+            <h2 class="container my-5">À propos de moi</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <img src="./assets/images/profil.webp " class="align-items-center" width="100%">
+                    </div>
+                    <div class="col-12 col-md-8 px-4">
+                        <p>
+                            Hello 😊! Je m’appelle Houda, développeuse fullstack junior, Javascript, React, Node.Js, passionnée par le développement front-end et back-end, assoiffée de nouvelles connaissances, d'apprendre de nouvelles techniques curieuse, autonome et ayant l'esprit d’équipe..
+                            Ayant toujours été passionnée par l'informatique, j'ai décidé de me lancer dans cette formation afin de me spécialiser dans le développement web, et de pouvoir exercer un métier qui me passionne.
+                            N'hésitez pas à me contacter pour on savoir plus sur mon parcours et mes projets.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -42,26 +85,25 @@
             <div class="container ">
                 <h2>Mon expertise </h2>
                 <h3>Développeuse Web et Mobile</h3>
-
-            
-                <div class="row mt-5">
-                    <div class="col-7">
-                        <img src="./assets/images/competence.png" alt="image competence" width="100%">
-                
+                            
+                <div class="row gy-4 mt-4">
+                    <div class="col-12 col-md-7">
+                        <div class="bg-secondary h-100 w-100 py-5">
+                        </div>
                     </div>
-                    <div class="offset-1 col-4">
+                    <div class="col-12 offset-md-1 col-md-4">
                         <img src="./assets/images/code.jpg" alt="image-code" width="100%">
                         
                     </div>
                 </div>
-                <div class="row mt-5">
-                    <div class="col-4">
+                <div class="row gy-4 mt-4">
+                    <div class="col-12 col-md-4">
                         <img src="./assets/images/ensemble.jpg" alt="image-ensemble" width="100%">
                     
                     </div>
-                    <div class="offset-1 col-7">
-                        <img src="./assets/images/outiel.png" alt="outiel" width="100%">
-                        
+                    <div class="col-12 offset-md-1 col-md-7">
+                        <div class="bg-secondary h-100 w-100 py-5">
+                        </div>
                     </div>
               
             </div> 
@@ -72,23 +114,23 @@
             <div class="container">
                 <h2>Mon portfolio </h2>
                 <h3>Projet perso et formation</h3>
-                <div class="row gy-5 mt-4">
-                    <div class="col-3"> 
+                <div class="row gy-4 mt-4">
+                    <div class="col-12 col-md-3"> 
                         <div class="bg-secondary h-100 w-100 py-5">
                                 Row column
                         </div>
                     </div>
-                    <div class="col-3"> 
+                    <div class="col-12 col-md-3"> 
                         <div class="bg-secondary h-100 w-100 py-5">
                                 Row column
                         </div>
                     </div>
-                    <div class="col-3"> 
+                    <div class="col-12 col-md-3"> 
                         <div class="bg-secondary h-100 w-100 py-5">
                                 Row column
                         </div>
                     </div>
-                    <div class="col-3"> 
+                    <div class="col-12 col-md-3"> 
                         <div class="bg-secondary h-100 w-100 py-5">
                                 Row column
                         </div>
@@ -100,13 +142,13 @@
         <section id="contact" class="py-5 bg-light">
             <div class="container">
                 <h2>Contactez-moi</h2>
-                <p>N'hésitez pas à me contacter, je vous répondrai dans les plus brefs délais.</p>
+                <h3 class="fw-light fs-5"></h3>N'hésitez pas à me contacter, je vous répondrai dans les plus brefs délais.</h3>
 
-                <div class="row mt-5">
-                    <div class="col-5">
+                <div class="row gy-4 mt-4">
+                    <div class="col-12 col-md-5">
                         Row column
                     </div>
-                    <div class="offset-1 col-6">
+                    <div class="col-12 offset-md-1 col-md-6">
                         Row column
                     </div>
                 </div>
@@ -115,20 +157,35 @@
     </main>
 
     <footer class="border-top">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-4">
-                    <div class="bg-secondary py-5"></div>
+        <div class="container py-2">
+            <div class="row gy-4 align-items-center">
+                <div class="col-12 col-md-4">
+                    <a class="navbar-brand text-dark text-uppercase fw-bold" href="page-top">
+                        <img  src="./assets/images/houda.png">
+                    </a>
                 </div>
-                <div class="col-4">
-                    <div class="bg-secondary py-5"></div>
+                <div class="col-12 col-md-4 text-md-center">
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#" class="text-decoration-none text-dark">Mentions légales</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-4">
-                    <div class="bg-secondary py-5"></div>
+                <div class="col-12 col-md-4 text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a href="#" class="text-decoration-none text-dark"><i class="bi bi-linkedin"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-decoration-none text-dark"><i class="bi bi-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-decoration-none text-dark"><i class="bi bi-twitter"></i></a>
+                        </li>
+                    </ul>
                 </div>
-          </div>
+            </div>
         </div>
-    </footer>
     <!-- Script js -->
     <script src="/assets/js/bootstrap.bundle.min.js">
     </script>
