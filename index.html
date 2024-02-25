@@ -54,7 +54,7 @@
                     <div class="col-12 col-md-8 ">
                         <h1 class="fw-bold ">Bienvenue sur mon portfolio </h1>
                         <h2 class="fw-light">Je suis Houda, développeuse full-stack</h2>
-                        <a href="/assets/cv.pdf" class="btn btn-primary mt-5" role="button" download>Télécharger mon CV</a>
+                        <a href="/assets/cv.pdf" class="btn btn-secondary mt-5" role="button" download>Télécharger mon CV</a>
                     </div>
                     <div class="col-12 col-md-4">
                         <img src="./assets/images/index.jpg" alt="image-index" width="100%" >
@@ -63,20 +63,18 @@
             </div>
         </section>
         <!--========= section propos =========-->
-        <section id="propos">
-            <h2 class="container my-5">À propos de moi</h2>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-2 text-center align-items-center ">
-                        <img src="./assets/images/profil.png " class="align-items-center rounded-circle img-profil" width="100%">
-                    </div>
-                    <div class="col-12 col-md-10 px-4">
-                        <p class="py-3 text-center align-items-center">
-                            Hello 😊! Je m’appelle Houda, développeuse fullstack junior, Javascript, React, Node.Js, passionnée par le développement front-end et back-end, assoiffée de nouvelles connaissances, d'apprendre de nouvelles techniques curieuse, autonome et ayant l'esprit d’équipe.
-                            Ayant toujours été passionnée par l'informatique, j'ai décidé de me lancer dans cette formation afin de me spécialiser dans le développement web, et de pouvoir exercer un métier qui me passionne.
-                            N'hésitez pas à me contacter pour on savoir plus sur mon parcours et mes projets.
-                        </p>
-                    </div>
+        <section id="propos" class="container">
+            <h2 >À propos de moi</h2>
+            <div class="row d-flex justify-content-around my-4">
+                <div class="col-12 col-md-2 text-center text-md-start">
+                    <img src="./assets/images/profil.png " class=" rounded-circle img-profil" width="100%">
+                </div>
+                <div class="col-12 offset-md-1 col-md-9 pt-2">
+                    <p class="text-center ">
+                        Hello 😊! Je m’appelle Houda, développeuse fullstack junior, Javascript, React, Node.Js, passionnée par le développement front-end et back-end, assoiffée de nouvelles connaissances, d'apprendre de nouvelles techniques curieuse, autonome et ayant l'esprit d’équipe.
+                        Ayant toujours été passionnée par l'informatique, j'ai décidé de me lancer dans cette formation afin de me spécialiser dans le développement web, et de pouvoir exercer un métier qui me passionne.
+                        N'hésitez pas à me contacter pour on savoir plus sur mon parcours et mes projets.
+                    </p>
                 </div>
             </div>
         </section>
@@ -307,7 +305,7 @@
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="portfolioModalLabel">Booki</h5>
+                                                    <h5 class="modal-title" id="portfolioModalLabel">Portfolio développeuse web</h5>
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
@@ -328,36 +326,37 @@
             </div>          
         </section>
         <!--======== Section contact ========-->
-        <section id="contact" class="py-5 bg-light">
-            <div class="container">
-                <h2>Contactez-moi</h2>
-                <h3 class="fw-light fs-5"></h3>N'hésitez pas à me contacter, je vous répondrai dans les plus brefs délais.</h3>
-
-                <div class="row gy-4 mt-4">
-                    <div class="col-12 col-md-5">
-                        Row column
+        <section id="contact" class="section-form container py-5 w-100 ">
+                <h2 class="text-center" >Contactez-moi</h2>
+                <h3 class="fw-light fs-5 mb-4 text-center">N'hésitez pas à me contacter, je vous répondrai dans les plus brefs délais.</h4>
+                <!--========= Section formulaire ========-->
+                <form class="row">
+                    <div class="col-6 mb-3">
+                        <label for="nom" class="form-label">Votre nom</label>
+                        <input type="text" class="form-control" id="nom" placeholder="nom">
                     </div>
-                    <div class="col-12 offset-md-1 col-md-6">
-                        Row column
+                    <div class="col-6 mb-3">
+                        <label for="prenom" class="form-label">Votre prénom</label>
+                        <input type="text" class="form-control" id="prenom" placeholder="prénom">
                     </div>
-                </div>
-            </div>
+                    <div class="col-12 mb-3">
+                        <label for="mail" class="form-label">Votre adress mail</label>
+                        <input type="email" class="form-control" id="mail" placeholder="name@example.com">
+                    </div>
+                    <div class="col-12 mb-3">
+                        <label for="message" class="form-label">Votre message</label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-secondary w-25 ">Envoyer</button>
+                    </div>
+                </form>
         </section>     
     </main>
 
     <footer class="border-top">
         <div class="container py-2">
-            <div class="row gy-4 ">
-                
-                <div class="col text-center">
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="#" class="text-decoration-none text-dark">© Copyright 2023/2024 - Houda BEN || Tous droits réservés.</a>
-                        </li>
-                    </ul>
-                </div>
-                
-            </div>
+            
         </div>
     <!-- Script js -->
     <script src="/assets/js/bootstrap.bundle.min.js">
