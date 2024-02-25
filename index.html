@@ -67,12 +67,12 @@
             <h2 class="container my-5">À propos de moi</h2>
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-4">
-                        <img src="./assets/images/profil.webp " class="align-items-center" width="100%">
+                    <div class="col-12 col-md-2 text-center align-items-center ">
+                        <img src="./assets/images/profil.png " class="align-items-center rounded-circle img-profil" width="100%">
                     </div>
-                    <div class="col-12 col-md-8 px-4">
-                        <p>
-                            Hello 😊! Je m’appelle Houda, développeuse fullstack junior, Javascript, React, Node.Js, passionnée par le développement front-end et back-end, assoiffée de nouvelles connaissances, d'apprendre de nouvelles techniques curieuse, autonome et ayant l'esprit d’équipe..
+                    <div class="col-12 col-md-10 px-4">
+                        <p class="py-3 text-center align-items-center">
+                            Hello 😊! Je m’appelle Houda, développeuse fullstack junior, Javascript, React, Node.Js, passionnée par le développement front-end et back-end, assoiffée de nouvelles connaissances, d'apprendre de nouvelles techniques curieuse, autonome et ayant l'esprit d’équipe.
                             Ayant toujours été passionnée par l'informatique, j'ai décidé de me lancer dans cette formation afin de me spécialiser dans le développement web, et de pouvoir exercer un métier qui me passionne.
                             N'hésitez pas à me contacter pour on savoir plus sur mon parcours et mes projets.
                         </p>
@@ -106,26 +106,224 @@
                 <h2>Mon portfolio </h2>
                 <h3>Projet perso et formation</h3>
                 <div class="row gy-4 mt-4">
-                    <div class="col-12 col-md-3"> 
-                        <div class="bg-secondary h-100 w-100 py-5">
-                                Row column
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
+                        <!-- Projet booki-->
+                        <div class="card style-card">
+                            <img src="./assets/images/portfolio/booki.webp" class="card-img-top img-portfolio" alt="imge de projet booki">
+                            <div class="card-body">
+                                <h5 class="card-title">Booki</h5>
+                                <p class="card-text">HTML, CSS et Figma.</p>
+                                    
+                                    <!-- modal-->
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookiModal">
+                                        Plus d'infos
+                                    </button>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="bookiModal" tabindex="-1" aria-labelledby="bookiModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="bookiModalLabel">Booki</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Développer un site Internet de l’entreprise Booki qui permette aux usagers de trouver des
+                                                        hébergements et des activités dans la ville de leur choix. Intégrer du contenu conformément
+                                                        à une maquette avec HTML et CSS, implémenter une interface responsive, installer un environnement 
+                                                        de développement front-end.
+                                                    </p>
+                                                </div>
+                                                <a href="https://hadhoudda.github.io/Booki/" target="_blank" class="btn btn-primary " >
+                                                        Voir le site 
+                                                 </a>
+                                               
+                                         
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   
+                    </div>
+                    <!-- projet sophie -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
+                        <div class="card style-card">
+                            <img src="./assets/images/portfolio/sophie.webp" class="card-img-top img-portfolio " alt="imge de projet sophie">
+                            <div class="card-body">
+                                <h5 class="card-title">Sohie Bluel</h5>
+                                <p class="card-text">Javascript, CSS et API.</p>
+                                    
+                                    <!-- modal-->
+                                    <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sophieModal">
+                                            Plus d'infos
+                                        </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="sophieModal" tabindex="-1" aria-labelledby="sophieModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="sophieModalLabel">Sohie Bluel</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Créez une page web dynamique avec JavaScript. Manipuler les éléments du DOM, 
+                                                        récupérer les données utilisateurs via des formulaires et gérer ses événements avec JavaScript
+                                                    </p>
+                                                </div>
+                                                <a href="https://github.com/hadhoudda/Site-Architecte-Sophie" target="_blank" class="btn btn-primary"> Voir le code</a>
+                                    
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3"> 
-                        <div class="bg-secondary h-100 w-100 py-5">
-                                Row column
+                    </div>
+                    <!-- projet nina-->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
+                        <div class="card style-card">
+                            <img src="./assets/images/portfolio/nina.webp" class="card-img-top img-portfolio" alt="imge de projet nina">
+                            <div class="card-body">
+                                <h5 class="card-title">Nina Carducci</h5>
+                                <p class="card-text">Débug, Audit, Wave et SEO.</p>
+                                    <!-- modal-->
+                                    <!-- Button trigger modal -->
+                                   
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ninaModal">
+                                            Plus d'infos
+                                        </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="ninaModal" tabindex="-1" aria-labelledby="ninaModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="ninaModalLabel">Nina Carducci</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Débugger grâce aux Chrome DevTools et optimiser les performances d'un site de photographe Nina Carducci.
+                                                    </p>
+                                                </div>
+                                                <a href="https://hadhoudda.github.io/site-photographe-Nina/" target="_blank" class="btn btn-primary"> Voir le site </a>
+                                    
+                                     
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3"> 
-                        <div class="bg-secondary h-100 w-100 py-5">
-                                Row column
+                    </div>
+                    <!-- projet kasa-->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
+                        <div class="card style-card">
+                            <img src="./assets/images/portfolio/kasa.webp" class="card-img-top img-portfolio" alt="imge de projet kasa">
+                            <div class="card-body">
+                                <h5 class="card-title">Kasa</h5>
+                                <p class="card-text">React, React router et CSS.</p>
+                               
+                                    <!-- modal-->
+                                    <!-- Button trigger modal -->
+                                    <div class="col">
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#kasaModal">
+                                            Plus d'infos
+                                        </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="kasaModal" tabindex="-1" aria-labelledby="kasaModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="kasaModalLabel">Kasa</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Créez une application web de location immobilière avec React en suivant les maquettes Figma
+                                                        (responsives ). Configurer la navigation entre les pages de l'application avec React Router, 
+                                                        développer des éléments de l'interface d'un site web grâce à des composants React. Mettre en 
+                                                        œuvre des animations CSS
+                                                    </p>
+                                                </div>
+                                                <a href="https://hadhoudda.github.io/Application-kasa-React/" target="_blank" class="btn btn-primary"> Voir le site </a>
+                                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3"> 
-                        <div class="bg-secondary h-100 w-100 py-5">
-                                Row column
+                    </div>
+                    <!-- projet grimoir-->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
+                        <div class="card style-card">
+                            <img src="./assets/images/portfolio/grimoir.webp" class="card-img-top img-portfolio" alt="imge de projet grimoir">
+                            <div class="card-body">
+                                <h5 class="card-title">Mon Vieux Grimoir</h5>
+                                <p class="card-text">Node.js, Express.js, Mongo DB et API.</p>
+                                 <!-- modal-->
+                                    <!-- Button trigger modal -->
+                                    <div class="col">
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#grimoirModal">
+                                            Plus d'infos
+                                        </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="grimoirModal" tabindex="-1" aria-labelledby="grimoirModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="grimoirModalLabel">Mon Vieux Grimoir</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Développer le backend d'un site de notation de livres. Implémenter l'inscription et la 
+                                                        connexion utilisateur, stocker des données de manière sécurisée au base de données, 
+                                                        mettre en œuvre des opérations CRUD de manière sécurisée et l'optimisation des images.
+                                                    </p>
+                                                </div>
+                                                <a href="https://github.com/hadhoudda/Mon-Vieux-Grimoire" target="_blank" class="btn btn-primary"> Voir le code </a>
+                                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    </div>
+                    <!--projet portfolio-->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
+                        <div class="card style-card">
+                            <img src="./assets/images/portfolio/portfolio.webp" class="card-img-top img-portfolio" alt="imge de projet portfolio">
+                            <div class="card-body">
+                                <h5 class="card-title">Portfolio développeuse web</h5>
+                                <p class="card-text">HTML, CSS, React et React router.</p>
+                                    <!-- modal-->
+                                    <!-- Button trigger modal -->
+                                    <div class="col">
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                                            Plus d'infos
+                                        </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="portfolioModalLabel">Booki</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Créer et publier en ligne portfolio d'une développeuse web Houda Ben Abdallah. Houda c'est moi 😜😜.
+                                                    </p>
+                                                </div>
+                                                <a href="https://hadhoudda.github.io/Portfolio" class="btn btn-primary"> Voir le site </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    
                 </div>
             </div>          
         </section>
@@ -149,32 +347,16 @@
 
     <footer class="border-top">
         <div class="container py-2">
-            <div class="row gy-4 align-items-center">
-                <div class="col-12 col-md-4">
-                    <a class="navbar-brand text-dark text-uppercase fw-bold" href="page-top">
-                        <img  src="./assets/images/houda.png">
-                    </a>
-                </div>
-                <div class="col-12 col-md-4 text-md-center">
+            <div class="row gy-4 ">
+                
+                <div class="col text-center">
                     <ul class="list-unstyled mb-0">
                         <li>
-                            <a href="#" class="text-decoration-none text-dark">Mentions légales</a>
+                            <a href="#" class="text-decoration-none text-dark">© Copyright 2023/2024 - Houda BEN || Tous droits réservés.</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-4 text-md-end">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item">
-                            <a href="#" class="text-decoration-none text-dark"><i class="bi bi-linkedin"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#" class="text-decoration-none text-dark"><i class="bi bi-instagram"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#" class="text-decoration-none text-dark"><i class="bi bi-twitter"></i></a>
-                        </li>
-                    </ul>
-                </div>
+                
             </div>
         </div>
     <!-- Script js -->
