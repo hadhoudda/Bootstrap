@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Houda</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="/assets/styles/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/32fe4a8f5c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -17,7 +16,7 @@
         <nav class="navbar navbar-expand-md fixed-top navbar-light bg-dark bg-gradient">
             <div class="container">
                 <a href="/index.html" class="navbar-brand">
-                    <img src="./assets/images/houda.png" class="rounded-circle">
+                    <img src="./assets/images/houda.png" class="rounded-circle" alt="photo houda">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -57,17 +56,17 @@
                         <a href="/assets/cv.pdf" class="btn btn-secondary mt-5" role="button" download>Télécharger mon CV</a>
                     </div>
                     <div class="col-12 col-md-4">
-                        <img src="./assets/images/index.jpg" alt="image-index" width="100%" >
+                        <img src="./assets/images/index.jpg" alt="image-index" style="width: 100%;" >
                     </div>
                 </div>
             </div>
         </section>
         <!--========= section propos =========-->
-        <section id="propos" class="container">
-            <h2 >À propos de moi</h2>
-            <div class="row d-flex justify-content-around my-4">
-                <div class="col-12 col-md-2 text-center text-md-start">
-                    <img src="./assets/images/profil.png " class=" rounded-circle img-profil" width="100%">
+        <section id="propos" class="container text-center">
+            <h2  >À propos de moi</h2>
+            <div class="row d-flex justify-content-center align-items-center  my-4">
+                <div class="col-12 col-md-2 text-center text-md-start p-5 p-md-0 ">
+                    <img src="./assets/images/profil.png " class=" rounded-circle img-profil" alt="image portfolio" style="width: 100%;">
                 </div>
                 <div class="col-12 offset-md-1 col-md-9 pt-2">
                     <p class="text-center ">
@@ -81,16 +80,15 @@
         <!--========= section competence =========-->
         <section id="skill" class="py-5 bg-light competence" >
             <div class="container ">
-                <h2>Mon expertise </h2>
-                <h3>Développeuse Web et Mobile</h3>
+                <h2 class="text-center">Mes compétences </h2>
                    
                 <div class="row gy-4 mt-4">
                     <div class="col-12 col-md-6">
-                        <img src="./assets/images/competence.png" width="100%"  alt="image cometence">
+                        <img src="./assets/images/competence.png" style="width: 100%;" alt="image cometence">
                         
                     </div>
                     <div class="col-12 col-md-6">
-                        <img src="./assets/images/outiel.png" width="98%" alt="image-code">
+                        <img src="./assets/images/outiel.png" style="width: 98%;" alt="image-code">
                         
                     </div>
                 </div>
@@ -101,13 +99,12 @@
         <!--========= section portfolio =========-->
         <section id="portfolio" class="py-5">
             <div class="container">
-                <h2>Mon portfolio </h2>
-                <h3>Projet perso et formation</h3>
+                <h2 class="text-center">Mon portfolio </h2>
                 <div class="row gy-4 mt-4">
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
                         <!-- Projet booki-->
-                        <div class="card style-card">
-                            <img src="./assets/images/portfolio/booki.webp" class="card-img-top img-portfolio" alt="imge de projet booki">
+                        <div class="card">
+                            <img src="./assets/images/portfolio/booki.webp" class="card-img-top img-portfolio" alt="imge de projet booki" style="height: 11rem;">
                             <div class="card-body">
                                 <h5 class="card-title">Booki</h5>
                                 <p class="card-text">HTML, CSS et Figma.</p>
@@ -136,8 +133,6 @@
                                                 <a href="https://hadhoudda.github.io/Booki/" target="_blank" class="btn btn-primary " >
                                                         Voir le site 
                                                  </a>
-                                               
-                                         
                                         </div>
                                     </div>
                                 </div>
@@ -147,8 +142,8 @@
                     </div>
                     <!-- projet sophie -->
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
-                        <div class="card style-card">
-                            <img src="./assets/images/portfolio/sophie.webp" class="card-img-top img-portfolio " alt="imge de projet sophie">
+                        <div class="card ">
+                            <img src="./assets/images/portfolio/sophie.webp" class="card-img-top img-portfolio " alt="imge de projet sophie" style="height: 11rem;">
                             <div class="card-body">
                                 <h5 class="card-title">Sohie Bluel</h5>
                                 <p class="card-text">Javascript, CSS et API.</p>
@@ -181,8 +176,8 @@
                     </div>
                     <!-- projet nina-->
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
-                        <div class="card style-card">
-                            <img src="./assets/images/portfolio/nina.webp" class="card-img-top img-portfolio" alt="imge de projet nina">
+                        <div class="card ">
+                            <img src="./assets/images/portfolio/nina.webp" class="card-img-top img-portfolio" alt="imge de projet nina" style="height: 11rem;">
                             <div class="card-body">
                                 <h5 class="card-title">Nina Carducci</h5>
                                 <p class="card-text">Débug, Audit, Wave et SEO.</p>
@@ -215,8 +210,8 @@
                     </div>
                     <!-- projet kasa-->
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
-                        <div class="card style-card">
-                            <img src="./assets/images/portfolio/kasa.webp" class="card-img-top img-portfolio" alt="imge de projet kasa">
+                        <div class="card ">
+                            <img src="./assets/images/portfolio/kasa.webp" class="card-img-top img-portfolio" alt="imge de projet kasa" style="height: 11rem;">
                             <div class="card-body">
                                 <h5 class="card-title">Kasa</h5>
                                 <p class="card-text">React, React router et CSS.</p>
@@ -253,8 +248,8 @@
                     </div>
                     <!-- projet grimoir-->
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
-                        <div class="card style-card">
-                            <img src="./assets/images/portfolio/grimoir.webp" class="card-img-top img-portfolio" alt="imge de projet grimoir">
+                        <div class="card ">
+                            <img src="./assets/images/portfolio/grimoir.webp" class="card-img-top img-portfolio" alt="imge de projet grimoir" style="height: 11rem;">
                             <div class="card-body">
                                 <h5 class="card-title">Mon Vieux Grimoir</h5>
                                 <p class="card-text">Node.js, Express.js, Mongo DB et API.</p>
@@ -289,8 +284,8 @@
                     </div>
                     <!--projet portfolio-->
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
-                        <div class="card style-card">
-                            <img src="./assets/images/portfolio/portfolio.webp" class="card-img-top img-portfolio" alt="imge de projet portfolio">
+                        <div class="card ">
+                            <img src="./assets/images/portfolio/portfolio.webp" class="card-img-top img-portfolio" alt="imge de projet portfolio" style="height: 11rem;">
                             <div class="card-body">
                                 <h5 class="card-title">Portfolio développeuse web</h5>
                                 <p class="card-text">HTML, CSS, React et React router.</p>
@@ -329,7 +324,7 @@
         <section id="contact">
             <div class="section-form container py-5 w-100 ">
                 <h2 class="text-center" >Contactez-moi</h2>
-                <h3 class="fw-light fs-5 mb-4 text-center">N'hésitez pas à me contacter, je vous répondrai dans les plus brefs délais.</h4>
+                <h3 class="fw-light fs-5 mb-4 text-center">N'hésitez pas à me contacter, je vous répondrai dans les plus brefs délais.</h3>
                 <!--========= Section formulaire ========-->
                 <form class="row">
                     <div class="col-6 mb-3">
@@ -353,16 +348,15 @@
                     </div>
                 </form>
             </div>           
-            <div class="row">
-                <p class="col-12 text-center">© Copyright 2023/2024 - Houda BEN ABDALLAH || Tous droits réservés.</p>
-            </div>
+            
         </section>     
     </main>
 
     <footer class="border-top">
-        <div class="container py-2">
-            
+        <div class="row">
+            <p class="col-12 text-center">© Copyright 2023/2024 - Houda BEN ABDALLAH || Tous droits réservés.</p>
         </div>
+    </footer>
     <!-- Script js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
